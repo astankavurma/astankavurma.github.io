@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Astan Kavurma Izgara Salonu | Batman Beşiri İkiköprü</title>
+<title>Astan Kavurma Izgara Salonu</title>
 
-<meta name="description" content="2016'dan beri Batman Beşiri İkiköprü'de hizmet veren Astan Kavurma Izgara Salonu. Kavurma, ızgara, kahvaltı ve daha fazlası.">
-
-<meta name="keywords" content="Astan Kavurma, Batman Kavurma, Beşiri, İkiköprü, Izgara, Lokanta">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description" content="Batman Beşiri İkiköprü'de 2016'dan beri hizmet veren Astan Kavurma Izgara Salonu.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -21,13 +18,13 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Poppins,sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
 background:#111;
-color:#fff;
+color:white;
 }
 
 header{
@@ -39,9 +36,9 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:18px 8%;
-background:rgba(0,0,0,.85);
-backdrop-filter:blur(10px);
-z-index:999;
+background:rgba(0,0,0,.90);
+backdrop-filter:blur(8px);
+z-index:1000;
 }
 
 .logo{
@@ -51,11 +48,11 @@ color:#FFD700;
 }
 
 nav a{
-color:white;
 text-decoration:none;
-margin-left:28px;
-transition:.3s;
+color:white;
+margin-left:25px;
 font-weight:500;
+transition:.3s;
 }
 
 nav a:hover{
@@ -63,84 +60,171 @@ color:#FFD700;
 }
 
 .hero{
+
 height:100vh;
+
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
 
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80");
+
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+url("IMG_20260708_233916.jpg");
 
 background-size:cover;
 background-position:center;
+
+padding:20px;
+
 }
 
 .hero h1{
-font-size:65.gallery{
+
+font-size:60px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#FFD700;
+
+color:black;
+
+text-decoration:none;
+
+font-weight:bold;
+
+border-radius:10px;
+
+margin:8px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:45px;
+
+color:#FFD700;
+
+}
+
+.cards{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:#1c1c1c;
+
+padding:25px;
+
+border-radius:15px;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
 gap:20px;
+
 }
 
 .gallery img{
+
 width:100%;
-height:230px;
+
+height:240px;
+
 object-fit:cover;
+
 border-radius:15px;
+
+cursor:pointer;
+
 transition:.4s;
+
 }
 
 .gallery img:hover{
+
 transform:scale(1.05);
-}
 
-.social{
-display:flex;
-justify-content:center;
-gap:20px;
-margin-top:30px;
-}
-
-.social a{
-display:inline-block;
-padding:14px 22px;
-border-radius:10px;
-background:#FFD700;
-color:#111;
-font-weight:bold;
-text-decoration:none;
-transition:.3s;
-}
-
-.social a:hover{
-transform:translateY(-5px);
 }
 
 .whatsapp{
+
 position:fixed;
+
 right:20px;
+
 bottom:20px;
+
 background:#25D366;
-color:white;
-padding:15px 20px;
+
+padding:15px 18px;
+
 border-radius:50px;
+
+color:white;
+
 text-decoration:none;
+
 font-weight:bold;
-box-shadow:0 5px 15px rgba(0,0,0,.4);
+
 z-index:999;
-}
 
-footer{
-background:#000;
-padding:35px;
-text-align:center;
-color:#bbb;
-}
+box-shadow:0 5px 15px rgba(0,0,0,.4);
 
-@media(max-width:768px){
+}@media(max-width:768px){
 
 header{
 flex-direction:column;
@@ -151,8 +235,8 @@ margin-top:15px;
 }
 
 nav a{
-margin:8px;
 display:inline-block;
+margin:8px;
 }
 
 .hero h1{
@@ -161,6 +245,10 @@ font-size:42px;
 
 .hero p{
 font-size:18px;
+}
+
+.gallery{
+grid-template-columns:1fr;
 }
 
 }
@@ -178,11 +266,8 @@ font-size:18px;
 <nav>
 
 <a href="#hakkimizda">Hakkımızda</a>
-
 <a href="#menu">Menü</a>
-
 <a href="#galeri">Galeri</a>
-
 <a href="#iletisim">İletişim</a>
 
 </nav>
@@ -193,9 +278,9 @@ font-size:18px;
 
 <div>
 
-<h1>2016'dan Beri Lezzetin Adresi</h1>
+<h1>Astan Kavurma Izgara Salonu</h1>
 
-<p>Batman Beşiri İkiköprü Beldesi'nde eşsiz kavurma ve ızgara lezzeti.</p>
+<p>2016'dan beri Batman Beşiri İkiköprü Beldesi'nde eşsiz lezzetler sunuyoruz.</p>
 
 <a class="btn" href="tel:+905394298761">📞 Hemen Ara</a>
 
@@ -212,23 +297,25 @@ font-size:18px;
 <div class="cards">
 
 <div class="card">
-<h3>Kalite</h3>
-<p>2016'dan beri taze malzemeler ve kaliteli hizmet anlayışıyla misafirlerimizi ağırlıyoruz.</p>
+<h3>🥩 Kaliteli Et</h3>
+<p>Günlük taze etlerle hazırlanan kavurma ve ızgara çeşitlerimizle hizmet veriyoruz.</p>
 </div>
 
 <div class="card">
-<h3>Hijyen</h3>
-<p>Hijyen ve müşteri memnuniyeti bizim için her zaman ön plandadır.</p>
+<h3>🏆 2016'dan Beri</h3>
+<p>Yılların tecrübesi ve müşteri memnuniyetiyle hizmet vermeye devam ediyoruz.</p>
 </div>
 
 <div class="card">
-<h3>Lezzet</h3>
-<p>Kavurma, ızgara ve kahvaltı çeşitlerimizle unutulmaz bir lezzet sunuyoruz.</p>
+<h3>😊 Güler Yüzlü Hizmet</h3>
+<p>Aileniz ve sevdiklerinizle keyifli vakit geçirebileceğiniz sıcak bir ortam sunuyoruz.</p>
 </div>
 
 </div>
 
-</section><section id="menu">
+</section>
+
+<section id="menu">
 
 <h2 class="title">🍽️ Menümüz</h2>
 
@@ -236,52 +323,55 @@ font-size:18px;
 
 <div class="card">
 <h3>🥩 Kavurma</h3>
-<p>Günlük taze hazırlanan özel kavurma.</p>
+<p>Menü ve fiyatlar yakında eklenecektir.</p>
 </div>
 
 <div class="card">
-<h3>🔥 Izgara Çeşitleri</h3>
-<p>Köfte, tavuk ve diğer lezzetli ızgaralar.</p>
-</div>
-
-<div class="card">
-<h3>🍳 Kahvaltı</h3>
-<p>Zengin serpme kahvaltı seçenekleri.</p>
+<h3>🔥 Izgara</h3>
+<p>Kebap, tavuk ve diğer ızgara çeşitleri.</p>
 </div>
 
 <div class="card">
 <h3>🥤 İçecekler</h3>
-<p>Sıcak ve soğuk içecek çeşitleri.</p>
+<p>Sıcak ve soğuk içecek seçenekleri.</p>
 </div>
 
 </div>
 
-</section>
+</section><section id="galeri">
 
-<section id="galeri">
-
-<h2 class="title">📸 Galeri</h2>
+<h2 class="title">📸 Galerimiz</h2>
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Kavurma">
-
-<img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=80" alt="Izgara">
-
-<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Yemek">
+<img src="IMG_20260705_155846.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_233802.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_233813.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_233822.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_233829.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_233841.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_233849.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_233916.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_233941.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234003.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234020.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234034.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234047.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234101.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234123.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234141.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234203.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234217.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234232.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234254.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234308.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234338.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234351.jpg" onclick="openImage(this.src)">
+<img src="IMG_20260708_234402.jpg" onclick="openImage(this.src)">
 
 </div>
 
-</section>
-
-<section>
-
-<h2 class="title">⭐ Bizi Takip Edin</h2>
-
-<div class="social">
-
-<a href="https://www.instagram.com/astankavurma?igsh=MXRoY3FkeDNsb2xhOQ==" target="_blank">
-📷 Instagram<section id="iletisim">
+</section><section id="iletisim">
 
 <h2 class="title">📍 İletişim</h2>
 
@@ -304,40 +394,15 @@ font-size:18px;
 
 </div>
 
-<br><br>
-
-<h2 class="title">🗺️ Konum</h2>
-
-<div style="text-align:center;">
+<div style="text-align:center;margin-top:40px;">
 
 <a class="btn" href="https://maps.app.goo.gl/msNUEMy8gV6TbkA27" target="_blank">
-📍 Google Haritalar'da Yol Tarifi Al
+📍 Yol Tarifi Al
 </a>
 
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">⭐ Neden Astan Kavurma?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🥩 Günlük Taze Ürünler</h3>
-<p>Her gün taze hazırlanan lezzetler sunuyoruz.</p>
-</div>
-
-<div class="card">
-<h3>😊 Güler Yüzlü Hizmet</h3>
-<p>Müşteri memnuniyeti her zaman önceliğimizdir.</p>
-</div>
-
-<div class="card">
-<h3>🏆 2016'dan Beri</h3>
-<p>Yılların verdiği tecrübe ile hizmetinizdeyiz.</p>
-</div>
+<a class="btn" href="https://www.instagram.com/astankavurma?igsh=MXRoY3FkeDNsb2xhOQ==" target="_blank">
+📷 Instagram
+</a>
 
 </div>
 
@@ -347,98 +412,39 @@ font-size:18px;
 💬 WhatsApp
 </a>
 
-<footer>
+<div id="lightbox" style="display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.95);justify-content:center;align-items:center;z-index:9999;" onclick="closeImage()">
 
-<h3 style="color:#FFD700;">Astan Kavurma Izgara Salonu</h3>
+<img id="lightbox-img" style="max-width:90%;max-height:90%;border-radius:15px;">
 
-<p>📍 Batman Beşiri İkiköprü Beldesi</p>
+</div>
+
+<footer style="background:#000;padding:35px;text-align:center;">
+
+<h2 style="color:#FFD700;">🥩 Astan Kavurma</h2>
+
+<p>Batman Beşiri İkiköprü Beldesi</p>
 
 <p>📞 0539 429 87 61</p>
 
-<p>
-<a href="https://www.instagram.com/astankavurma?://www.instagram.com/astankavurma?igsh=MXRoY3FkeDNsb2xhOQ==" target="_blank" style="color:#FFD700;text-decoration:none;">
-📷 Instagram
-</a>
-</p>
-
-<p style="margin-top:20px;">
-© 2026 Astan Kavurma Izgara Salonu - Tüm Hakları Saklıdır.
+<p style="margin-top:15px;">
+© 2026 Astan Kavurma Izgara Salonu
 </p>
 
 </footer>
-<section id="sss">
 
-<h2 class="title">❓ Sık Sorulan Sorular</h2>
+<script>
 
-<div class="cards">
+function openImage(src){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src=src;
+}
 
-<div class="card">
-<h3>Paket servisiniz var mı?</h3>
-<p>Telefon veya WhatsApp üzerinden bizimle iletişime geçebilirsiniz.</p>
-</div>
+function closeImage(){
+document.getElementById("lightbox").style.display="none";
+}
 
-<div class="card">
-<h3>Rezervasyon yapabiliyor muyuz?</h3>
-<p>Evet. Bizi telefonla arayarak rezervasyon oluşturabilirsiniz.</p>
-</div>
+</script>
 
-<div class="card">
-<h3>Çalışma saatleriniz nedir?</h3>
-<p>Her gün 07:00 - 22:00 saatleri arasında hizmet veriyoruz.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">⭐ Müşteri Memnuniyeti</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>😊 Kaliteli Hizmet</h3>
-<p>Misafirlerimize güler yüzlü ve kaliteli hizmet sunmayı hedefliyoruz.</p>
-</div>
-
-<div class="card">
-<h3>🥩 Taze Lezzet</h3>
-<p>Ürünlerimizi günlük ve özenle hazırlıyoruz.</p>
-</div>
-
-<div class="card">
-<h3>❤️ Sizleri Bekliyoruz</h3>
-<p>Aileniz ve sevdiklerinizle keyifli bir yemek deneyimi için Astan Kavurma'ya bekleriz.</p>
-</div>
-
-</div>
-
-</section> <section> <h2 class="title">📸 Galeri</h2>
-
-  <img src="IMG_20260705_155846.jpg" width="100%">
-  <img src="IMG_20260708_233802.jpg" width="100%">
-  <img src="IMG_20260708_233813.jpg" width="100%">
-  <img src="IMG_20260708_233822.jpg" width="100%">
-  <img src="IMG_20260708_233829.jpg" width="100%">
-  <img src="IMG_20260708_233841.jpg" width="100%">
-  <img src="IMG_20260708_233849.jpg" width="100%">
-  <img src="IMG_20260708_233916.jpg" width="100%">
-  <img src="IMG_20260708_233941.jpg" width="100%">
-  <img src="IMG_20260708_234003.jpg" width="100%">
-<img src="IMG_20260708_234020.jpg" width="100%">
-<img src="IMG_20260708_234034.jpg" width="100%">
-<img src="IMG_20260708_234047.jpg" width="100%">
-<img src="IMG_20260708_234101.jpg" width="100%">
-<img src="IMG_20260708_234123.jpg" width="100%">
-<img src="IMG_20260708_234141.jpg" width="100%">
-<img src="IMG_20260708_234203.jpg" width="100%">
-<img src="IMG_20260708_234217.jpg" width="100%">
-<img src="IMG_20260708_234232.jpg" width="100%">
-<img src="IMG_20260708_234254.jpg" width="100%">
-<img src="IMG_20260708_234308.jpg" width="100%">
-<img src="IMG_20260708_234338.jpg" width="100%">
-<img src="IMG_20260708_234351.jpg" width="100%">
-<img src="IMG_20260708_234402.jpg" width="100%"></section>
 </body>
+
 </html>
