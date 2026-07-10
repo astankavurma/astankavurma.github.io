@@ -11,7 +11,34 @@
 <meta name="description" content="Batman Beşiri İkiköprü'de 2016'dan beri hizmet veren Astan Kavurma Izgara Salonu.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+/* Senin mevcut CSS kodların */
 
+.bottom-bar{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-around;
+align-items:center;
+background:#7a1f1f;
+padding:12px 0;
+z-index:9999;
+box-shadow:0 -4px 12px rgba(0,0,0,.4);
+}
+
+.bottom-bar a{
+color:#FFD700;
+text-decoration:none;
+font-weight:700;
+font-size:16px;
+}
+
+body{
+padding-bottom:70px;
+}
+
+</style>
 <style>
 
 *{
@@ -473,7 +500,15 @@ document.getElementById("lightbox").style.display="none";
 }
 
 </script>
+<div class="bottom-bar">
 
+<a href="tel:+905394298761">📞 Ara</a>
+
+<a href="https://wa.me/905394298761" target="_blank">💬 WhatsApp</a>
+
+<a href="https://maps.app.goo.gl/9r9q1ow7bCRvaW6K6" target="_blank">📍 Yol Tarifi</a>
+
+</div>
 </body>
 
 </html>
